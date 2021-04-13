@@ -80,6 +80,8 @@ const speaker = (words, callback) => {
   return newArray;
 };
 
+// I had to change my git address, but Chance saw I had a for-each branch before he directed me to change it to master.
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
