@@ -154,9 +154,9 @@ STRETCH - CHALLENGE 7
 Write a function named fizzbuzz that takes in an array of numbers.
 
 Iterate over the array using forEach to determine the output based on several rules:
-  - If a number is divisible by 3, add the word "Fizz" to the output array.
-  - If the number is divisible by 5, add the word "Buzz" to the output array.
-  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
+  - If a number is evenly divisible by 3, add the word "Fizz" to the output array.
+  - If the number is evenly divisible by 5, add the word "Buzz" to the output array.
+  - If the number is evenly divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
   - Otherwise, add the number to the output array.
 
 Return the resulting output array.
@@ -164,6 +164,24 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  const newArray = [];
+  arr.forEach((num) => {
+
+    if (num % 15 === 0) {
+      // write fizzbuzz to array
+      newArray.push('Fizz Buzz');
+    } else if (num % 5 === 0) {
+      // write buzz to array
+      newArray.push('Buzz');
+    } else if (num % 3 === 0) {
+      // write fizz to array
+      newArray.push('Fizz');
+    } else {
+      // and number to array
+      newArray.push(num);
+    }
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -217,7 +235,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
