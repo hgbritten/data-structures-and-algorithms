@@ -121,15 +121,25 @@ Write a function named reversedString that takes in a string and returns a strin
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
 
-const reversedString = (str) => {
-  let stringAsAnArray = str.split('')
+// const reversedString = (str) => {
+//   let stringAsAnArray = str.split('')
 
-  const reducedArray = stringAsAnArray.reduce((acc, cur) => {
-    acc.unshift(cur)
-    return acc
-  }, []);
-  return reducedArray.join('')
+//   const reducedArray = stringAsAnArray.reduce((acc, cur) => {
+//     acc.unshift(cur)
+//     return acc
+//   }, []);
+//   return reducedArray.join('')
+// }
+
+const reversedString = (str) => {
+  let newString = str.split('')
+
+  return newString.reduce((acc, cur) => {
+    return cur + acc
+  }, '');
+
 }
+
 
 
 
