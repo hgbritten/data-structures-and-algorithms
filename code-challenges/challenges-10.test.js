@@ -137,7 +137,11 @@ const errands = [
   }
 ];
 
-const howManyTreats = (arr) => arr[2].items[1].quantity;
+const howManyTreats = (arr) => (
+  arr.reduce((acc, cur) => cur.store === 'Pet store' ? acc = cur : acc, {}).items.reduce((acc, cur) => cur.name === 'Treats' ? acc = cur : acc, {}).quantity
+)
+
+// arr[2].items[1].quantity; this also works
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
