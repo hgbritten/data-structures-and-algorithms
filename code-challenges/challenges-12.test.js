@@ -65,11 +65,9 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 // https://www.w3resource.com/javascript/form/email-validation.php 
 
 const validateEmail = (email) => {
-  // /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-  console.log((/^[a-zA-Z0-9.+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[c-t]+)*$/.test(email)))
-  return (/^[a-zA-Z0-9.]+@[a-zA-Z]+(?:\.[c-t]+)*$/.test(email))
+  return (/^[a-zA-Z0-9]+\.?[a-zA-Z0-9]+?@[a-zA-Z0-9]+.(net|com|org)$/.test(email))
 };
-
+// Nothing satisfies this.
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -91,7 +89,11 @@ Your function should include a single regular expression pattern that matches an
 Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
-const validatePhoneNumber = (phoneNumber) => phoneNumber.toString().match(/\d/g).length === 10;
+// https://stackoverflow.com/questions/123559/how-to-validate-phone-numbers-using-regex 
+
+
+const validatePhoneNumber = (phoneNumber) => {
+  return (/^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.)\s*(\d+))?$/.test(phoneNumber))}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
