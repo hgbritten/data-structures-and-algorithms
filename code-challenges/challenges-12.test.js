@@ -65,10 +65,11 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 // https://www.w3resource.com/javascript/form/email-validation.php 
 
 const validateEmail = (email) => {
-  return (/^[a-zA-Z0-9]+\.?[a-zA-Z0-9]+?@[a-zA-Z0-9]+.(net|com|org)$/.test(email))
+  return (/^[a-zA-Z0-9]+(\.?[a-zA-Z0-9]+)?@[a-zA-Z0-9]+\.(net|com|org)$/.test(email))
 };
-// Nothing satisfies this.
+
 /* ------------------------------------------------------------------------------------------------
+
 CHALLENGE 6
 
 Write a function named validatePhoneNumber that accepts a phone number and determines if it is valid.
