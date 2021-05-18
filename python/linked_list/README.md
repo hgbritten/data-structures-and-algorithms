@@ -7,5 +7,8 @@
 <!-- Embedded whiteboard image -->
 [array-shift](./array-shift.PNG)
 
+
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+- built with array Irwin
+- Url https://github.com/hgbritten/data-structures-and-algorithms/pull/17
