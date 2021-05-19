@@ -13,3 +13,5 @@
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 - For this problem we looked at the resources provided and thought about the holes in our code. We set up tests first to make sure we could go red green refactor. The Big 0 space is 1 and the Big 0 time is n since it depends on the length of the array and how many times the function needs to recurse to find the value or lack of value
+
+### merge https://github.com/hgbritten/data-structures-and-algorithms/pull/18
