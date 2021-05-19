@@ -1,12 +1,20 @@
-# Code challenges for Python 401
+# Data Structures and Algorithms
 
-# Reverse an Array
-<!-- Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order. -->
+See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
 
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
-[whiteboard](./whiteboard-chall1.PNG)
-## Approach & Efficiency
-<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
-- I thought about this based on previous languages. This function would take up a lot more Big O space than using a built-in function
+## Repository Quick Tour and Usage
 
+### 301 Code Challenges
+
+Under the `data-structures-and-algorithms` repository, at the top level is a folder called `code-challenges`
+
+Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
+
+### 401 Data Structures, Code Challenges
+
+- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+### Table of Contents
+[Challenge 1 README.md](./array_shift/README.md)
+[Challenge 2 README.md](./array_reverse/README.md)
+[Challenge 3 README.md](./array_binary_search/README.md)
