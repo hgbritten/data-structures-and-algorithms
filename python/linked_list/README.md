@@ -11,3 +11,4 @@ The Big O is O(1)!
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+- https://github.com/hgbritten/data-structures-and-algorithms/pull/19
