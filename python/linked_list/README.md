@@ -1,14 +1,13 @@
-# Insert to Middle of an Array
+# Singly Linked List
+<!-- Short summary or background information -->
+A singly linked list is a list that only points to one other node. It only has its own value and the address for the next node
+## Challenge
 <!-- Description of the challenge -->
-- Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
-
-
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
-[array-shift](./array-shift.PNG)
-
-
+Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
 ## Approach & Efficiency
-<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
-- built with array Irwin
-- Url https://github.com/hgbritten/data-structures-and-algorithms/pull/17
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The Big O is O(1)!
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
