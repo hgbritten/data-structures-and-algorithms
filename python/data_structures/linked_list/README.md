@@ -37,3 +37,4 @@ Add new methods to Linked List class
 
 # Solution
 <!-- Show how to run your code, and examples of it in action -->
+- Run the code with pytest and check them out in test_linked_list.py
