@@ -125,6 +125,25 @@ def test_insert_after_last():
     assert actual == expected
 
 
+# def test_k():
+#     lst = LinkedList()
+#     assert lst.k([1, 2, 3, 4], 2) == 2
+
+
+def test_kth_from_end_zero():
+    linked_list = LinkedList(values=["apples", "bananas", "cucumbers"])
+    actual = linked_list.k(0)
+    expected = "cucumbers"
+    assert actual == expected
+
+
+def test_kth_from_end_two():
+    linked_list = LinkedList(values=["apples", "bananas", "cucumbers"])
+    actual = linked_list.k(2)
+    expected = "apples"
+    assert actual == expected
+
+
 # def test_insert_before():
 #     lst = LinkedList(values=["apple", "banana", "duck"])
 #     lst.insert_before("apple", "cucumber")
