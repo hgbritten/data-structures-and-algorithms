@@ -21,6 +21,8 @@ The Big O is O(1)!
 
 <!-- With help from Brian L -->
 
+<!-- https://github.com/hgbritten/data-structures-and-algorithms/pull/20 -->
+
 ## Challenge Summary
 Add new methods to Linked List class
 - .append(value)
