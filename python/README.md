@@ -95,4 +95,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 [Challenge 1 README.md](./code_challenges/array_shift/README.md)
 [Challenge 2 README.md](./code_challenges/array_reverse/README.md)
 [Challenge 3 README.md](./code_challenges/array_binary_search/README.md)
-[Challenge 5 README.md](./linked_list/README.md)
+[Challenge 5 README.md](./data_structures/linked_list/README.md)
+[Challenge 6 README.md](./data_structures/linked_list/README.md)
