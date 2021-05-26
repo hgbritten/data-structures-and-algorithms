@@ -81,6 +81,22 @@ class LinkedList:
         return follower.value
 
 
+def zip_lists(list_1, list_2):
+    current1 = list_1.head
+    current2 = list_2.head
+    while current1 and current2:
+        next_1 = current1.next
+        next_2 = current2.next
+        current1.next = current2
+        if next_1:
+            current2.next = next_1
+            current1 = next_1
+            current2 = next_2
+        else:
+            break
+    return list_1
+
+
 # We want a leader variable to start at the head. We want to initialize a follower variable. We also want to initialize a paces variable that knows how many places back the follower is from the leader. In order to traverse through the list we use a while loop.
 
 

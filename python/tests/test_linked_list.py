@@ -1,4 +1,4 @@
-from data_structures.linked_list.linked_list import LinkedList, Node
+from data_structures.linked_list.linked_list import LinkedList, Node, zip_lists
 
 
 def test_import():
@@ -141,6 +141,50 @@ def test_kth_from_end_two():
     linked_list = LinkedList(values=["apples", "bananas", "cucumbers"])
     actual = linked_list.k(2)
     expected = "apples"
+    assert actual == expected
+
+
+# def test_zip_list_1():
+#     list_1 = LinkedList()
+#     list_2 = LinkedList()
+#     list_1.append("apples")
+#     list_1.append("bananas")
+#     list_2.append("pears")
+#     list_2.append("artichoke")
+#     actual = zip_lists(list_1, list_2)
+#     expected = "apples", "pears", "bananas", "artichoke"
+#     assert actual == expected
+
+
+def test_zip_list2():
+    list_1 = LinkedList(values=["apples"])
+    list_2 = LinkedList(values=["pears"])
+    actual = str(zip_lists(list_1, list_2))
+    expected = "apples -> pears -> None"
+    assert actual == expected
+
+
+def test_zip_list():
+    list_1 = LinkedList(values=["apples", "bananas", "cucumbers"])
+    list_2 = LinkedList(values=["pears", "artichoke", "carrots"])
+    actual = str(zip_lists(list_1, list_2))
+    expected = "apples -> pears -> bananas -> artichoke -> cucumbers -> carrots -> None"
+    assert actual == expected
+
+
+def test_zip_list_first_longer():
+    list_1 = LinkedList(values=["apples", "bananas", "cucumbers", "beans"])
+    list_2 = LinkedList(values=["pears", "artichoke", "carrots"])
+    actual = str(zip_lists(list_1, list_2))
+    expected = "apples -> pears -> bananas -> artichoke -> cucumbers -> carrots -> beans -> None"
+    assert actual == expected
+
+
+def test_zip_list_second_longer():
+    list_1 = LinkedList(values=["apples"])
+    list_2 = LinkedList(values=["pears", "beans"])
+    actual = str(zip_lists(list_1, list_2))
+    expected = "apples -> pears -> beans -> None"
     assert actual == expected
 
 
