@@ -1,7 +1,9 @@
 class LinkedList:
-    def __init__(self, values=[]):
+    def __init__(self, values=None):
         self.head = None
-        self.values = values
+        if values:
+            for value in reversed(values):
+                self.insert(value)
 
     def insert(self, value):
         self.head = Node(value, self.head)
@@ -63,6 +65,23 @@ class LinkedList:
             else:
                 current.next = Node(new_val, current.next)
                 break
+
+    def k(self, k):
+        follower = None
+        leader = self.head
+        paces = 0
+        while leader:
+            leader = leader.next
+            if follower:
+                follower = follower.next
+            elif paces == k:
+                follower = self.head
+            else:
+                paces += 1
+        return follower.value
+
+
+# We want a leader variable to start at the head. We want to initialize a follower variable. We also want to initialize a paces variable that knows how many places back the follower is from the leader. In order to traverse through the list we use a while loop.
 
 
 class Node:

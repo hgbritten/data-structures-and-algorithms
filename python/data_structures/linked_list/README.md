@@ -40,3 +40,16 @@ Add new methods to Linked List class
 # Solution
 <!-- Show how to run your code, and examples of it in action -->
 - Run the code with pytest and check them out in test_linked_list.py
+
+## Challenge Summary
+Add new method to find k from the end's position value
+
+## Whiteboard Process
+[11-kth-from-end](./11-kth-from-end.PNG)
+
+## Approach & Efficiency
+- Our approach to this was to write a method that followed the leader down by k positions to get the value at the k index provided.
+- this has a big O(n) depending on the length of the list
+
+# Solution
+- Run the code with pytest and check them out in test_linked_list.py
