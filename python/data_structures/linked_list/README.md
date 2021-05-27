@@ -43,13 +43,30 @@ Add new methods to Linked List class
 
 ## Challenge Summary
 Add new method to find k from the end's position value
-
+- With help from Paulo
+- Link to github PR https://github.com/hgbritten/data-structures-and-algorithms/pull/21
 ## Whiteboard Process
 [11-kth-from-end](./11-kth-from-end.PNG)
 
 ## Approach & Efficiency
 - Our approach to this was to write a method that followed the leader down by k positions to get the value at the k index provided.
 - this has a big O(n) depending on the length of the list
+
+# Solution
+- Run the code with pytest and check them out in test_linked_list.py
+
+# Challenge 8
+
+## Challenge Summary
+- With help from Paulo and Skyler
+- Link to github PR https://github.com/hgbritten/data-structures-and-algorithms/pull/22
+Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Whiteboard
+[11-zip](./11-zip.PNG)
+
+## Approach & Efficiency
+- Our approach to this was to get the method to check the other list given for current.next and append to the new list that way.
 
 # Solution
 - Run the code with pytest and check them out in test_linked_list.py
