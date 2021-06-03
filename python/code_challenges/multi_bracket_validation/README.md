@@ -12,3 +12,4 @@
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 - Solution for this one is pretty easy. Just test out different strings with different combos of brackets and expect either true or false
+- Link to merge https://github.com/hgbritten/data-structures-and-algorithms/pull/26
