@@ -33,6 +33,12 @@ def test_string4():
 
 
 def test_string5():
-    actual = multi_bracket_validation(")({[dog]})")
+    actual = multi_bracket_validation(")({[dog]})(")
+    expected = False
+    assert actual == expected
+
+
+def test_string6():
+    actual = multi_bracket_validation("[(])")
     expected = False
     assert actual == expected
