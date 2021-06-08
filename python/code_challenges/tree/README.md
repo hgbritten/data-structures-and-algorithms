@@ -11,3 +11,16 @@
 <!-- Description of each method publicly available in each of your trees -->
 - I don't have an API for this
 - Link https://github.com/hgbritten/data-structures-and-algorithms/compare/tree?expand=1
+
+
+# Breadth First
+<!-- Description of the challenge -->
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+[breadth_first](breadth_first.PNG)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->

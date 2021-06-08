@@ -102,5 +102,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 [Challenge 11 README.md](./code_challenges/queues_with_stacks/README.md)
 [Challenge 12 README.md](./code_challenges/fifo_animal_shelter/README.md)
 [Challenge 13 README.md](./code_challenges/multi_bracket_validation/README.md)
-[Challenge 15 README.md](./code_challenges/tree/README.md)
+[Challenge 15 and 17 README.md](./code_challenges/tree/README.md)
 [Challenge 16 README.md](./code_challenges/find_maximum_binary_tree/README.md)
