@@ -104,3 +104,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 [Challenge 13 README.md](./code_challenges/multi_bracket_validation/README.md)
 [Challenge 15 and 17 README.md](./code_challenges/tree/README.md)
 [Challenge 16 README.md](./code_challenges/find_maximum_binary_tree/README.md)
+[Challenge 18 README.md](./code_challenges/fizz_buzz_tree/README.md)
