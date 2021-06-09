@@ -1,45 +1,101 @@
-from code_challenges.tree.tree import Queue
+from collections import deque
 
 
 class Node:
     def __init__(self, value):
         self.value = value
-        self.left = None
-        self.right = None
+        self.children = []
 
 
 class K_tree:
     def __init__(self):
         self.root = None
 
+    @staticmethod
+    def breadth_first(tree):
+        if tree.root is None:
+            return
+        q = []
+        q.append(tree.root)
+        while q:
+            fizz_val = fizz_buzz_tree(q[0].value)
+            print(fizz_val)
 
-def fizz_buzz_tree(tree=None):
+            node = q.pop(0)
+            for child in node.children:
+                q.append(child)
+
+        return q
+
+
+def fizz_buzz_tree(tree):
     q = Queue()
     q.enqueue(tree.root)
-
-    # if not tree:
-    #     return []
-
+    # new_tree = K_tree()
     while not q.is_empty():
         front = q.dequeue()
-        while front:
-            if front.value % 3 == 0 and front.value % 5 == 0:
-                front.value = "FizzBuzz"
-                break
-            elif front.value % 5 == 0:
-                front.value = "Buzz"
-                break
-            elif front.value % 3 == 0:
-                front.value = "Fizz"
-                break
-            else:
-                front.value = str(front.value)
-                break
+        # new_val = fizzify(front.value)
+        front.value = fizzify(front.value)
+        # new_node = Node(new_val)
+        # print(new_node.value)
 
-        if front.left:
-            q.enqueue(front.left)
-
-        if front.right:
-            q.enqueue(front.right)
-
+        for child in front.children:
+            q.enqueue(child)
     return tree
+
+
+def fizzify(value):
+    if value % 3 == 0 and value % 5 == 0:
+        return "FizzBuzz"
+    elif value % 5 == 0:
+        return "Buzz"
+    elif value % 3 == 0:
+        return "Fizz"
+    else:
+        return str(value)
+
+
+def new_tree():
+    pass
+
+
+class Queue:
+    def __init__(self):
+        self.storage = deque()
+
+    def enqueue(self, value):
+        self.storage.appendleft(value)
+
+    def dequeue(self):
+        if self.storage:
+            return self.storage.pop()
+        else:
+            return "queue empty"
+
+    def peek(self):
+        if self.storage:
+            return self.storage[-1]
+        else:
+            return "queue empty"
+        # return self.dq[-1]
+
+    def is_empty(self):
+        return len(self.storage) == 0
+
+
+if __name__ == "__main__":
+    one = Node(1)
+    two = Node(2)
+    three = Node(3)
+    four = Node(4)
+    five = Node(5)
+    six = Node(6)
+    seven = Node(7)
+    eight = Node(15)
+
+    one.children = [two, five]
+    two.children = [three, four]
+    five.children = [six, seven, eight]
+    kt = K_tree()
+    kt.root = one
+    fizz_buzz_tree(kt)
