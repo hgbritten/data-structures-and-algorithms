@@ -1,4 +1,3 @@
-from code_challenges.stacks_and_queues.invalid import InvalidOperationError
 from collections import deque
 
 
@@ -11,37 +10,26 @@ class Node:
 
 class Queue:
     def __init__(self):
-        self.rear = None
-        self.front = None
-        self.dq = deque()
+        self.storage = deque()
 
     def enqueue(self, value):
-        if self.rear:
-            self.rear = Node(value)
-        else:
-            self.rear = Node(value)
-            self.front = self.rear
+        self.storage.appendleft(value)
 
     def dequeue(self):
-        if self.front:
-
-            temp = self.front
-            self.front = self.front.next
-            temp.next = None
-
-            return temp.value
+        if self.storage:
+            return self.storage.pop()
         else:
-            raise InvalidOperationError("Method not allowed on empty collection")
+            return "queue empty"
 
     def peek(self):
-        if self.front:
-            return self.front.value
+        if self.storage:
+            return self.storage[-1]
         else:
-            raise InvalidOperationError("Method not allowed on empty collection")
+            return "queue empty"
         # return self.dq[-1]
 
-    def isEmpty(self):
-        return self.front is None
+    def is_empty(self):
+        return len(self.storage) == 0
 
 
 class BinaryTree:
@@ -118,9 +106,9 @@ class BinaryTree:
         queue_breadth = Queue()
         queue_breadth.enqueue(tree.root)
 
-        while queue_breadth.peek():
+        while not queue_breadth.is_empty():
             front = queue_breadth.dequeue()
-            values.append(front)
+            values.append(front.value)
 
             if front.left:
                 queue_breadth.enqueue(front.left)
