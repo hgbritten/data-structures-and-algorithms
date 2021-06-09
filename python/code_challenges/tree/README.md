@@ -21,6 +21,8 @@ Write a breadth first traversal method which takes a Binary Tree as its unique i
 [breadth_first](breadth_first.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+- our approach was to use the provided pseudocode to make the breadth_first method. Then we just had to change up the enque and dequeue methods and use deque instead of what we had previously been doing.
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+- Check out our tests in test_tree.py
+- link https://github.com/hgbritten/data-structures-and-algorithms/pull/29
