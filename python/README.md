@@ -106,3 +106,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 [Challenge 16 README.md](./code_challenges/find_maximum_binary_tree/README.md)
 [Challenge 18 README.md](./code_challenges/fizz_buzz_tree/README.md)
 [Challenge Class 26 README.md](./code_challenges/insertion_sort/README.md)
+[Challenge Class 27 README.md](./code_challenges/merge_sort/README.md)
