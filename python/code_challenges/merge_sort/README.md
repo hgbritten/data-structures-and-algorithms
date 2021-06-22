@@ -18,4 +18,4 @@ The code runs by passing merge_sort a list of numbers and returning them sorted 
 - Zach
 
 # Link to PR
--
+- https://github.com/hgbritten/data-structures-and-algorithms/pull/34
