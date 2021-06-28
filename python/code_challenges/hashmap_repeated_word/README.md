@@ -4,6 +4,11 @@
 - arguments: string
 - return: string
 
+
+## With help from
+- Tim V.
+
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![hashmap](hashmap_repeated_word.PNG)
@@ -18,4 +23,4 @@
 - Our solution is in test_hashmap_repeated_word.py
 
 ## Link
--
+- https://github.com/hgbritten/data-structures-and-algorithms/pull/37
