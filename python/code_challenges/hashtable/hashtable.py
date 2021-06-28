@@ -7,7 +7,7 @@ class Hashtable:
         if not self._buckets[index]:
             self._buckets[index] = LinkedList()
 
-        self._buckets[index].append([key, value])
+        self._buckets[index].insert([key, value])
 
     def get(self, key):
         index = self.hash(key)
@@ -23,14 +23,26 @@ class Hashtable:
         return None
 
     def contains(self, key):
-        pass
+        index = self.hash(key)
+        bucket = self._buckets[index]
+        if bucket is None:
+            return False
+
+        current = bucket.head
+
+        while current:
+            if current.value[0] == key:
+                return True
+            current = current.next
+
+        return None
 
     def hash(self, key):
         sum = 0
         for char in key:
             sum += ord(char)
 
-        sum *= 599
+        sum *= 19
 
         index = sum % len(self._buckets)
 

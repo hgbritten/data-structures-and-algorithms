@@ -13,6 +13,7 @@ def test_add():
     assert actual == expected
 
 
+# @pytest.mark.skip("pending")
 def test_get_banana():
     ht = Hashtable()
     ht.add("banana", 9)
@@ -29,12 +30,14 @@ def test_unknown_key():
     assert actual == expected
 
 
+@pytest.mark.skip("pending")
 def test_hash_apple():
     ht = Hashtable
     actual = ht.hash("apple")
     assert 0 <= actual <= 1024
 
 
+@pytest.mark.skip("pending")
 def test_hash_banana():
     ht = Hashtable
     actual = ht.hash("banana")
