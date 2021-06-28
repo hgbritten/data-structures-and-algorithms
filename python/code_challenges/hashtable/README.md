@@ -2,9 +2,6 @@
 <!-- Short summary or background information -->
 - A hashtable is a table that store information in key value pairs using a special algorithm to easily find information.
 
-## With help from
-- Tim V.
-
 ## Challenge
 <!-- Description of the challenge -->
 - Implement hashtable with add, get, contains, hash
