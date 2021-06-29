@@ -108,6 +108,8 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 [Challenge Class 26 README.md](./code_challenges/insertion_sort/README.md)
 [Challenge Class 27 README.md](./code_challenges/merge_sort/README.md)
 [Challenge Class 28 README.md](./code_challenges/quick_sort/README.md)
-[Challenge Class 29 README.md](./code_challenges/hashtable/README.md)
-[Challenge Class 30 README.md](./code_challenges/hashmap_repeated_word/README.md)
+[Challenge Class 30 README.md](./code_challenges/hashtable/README.md)
+[Challenge Class 31 README.md](./code_challenges/hashmap_repeated_word/README.md)
+[Challenge Class 32 README.md](./code_challenges/hashmap_tree_intersection/README.md)
+
 
