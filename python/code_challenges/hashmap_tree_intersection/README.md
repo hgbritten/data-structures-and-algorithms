@@ -19,3 +19,6 @@
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 - Our solution is in test_hashmap_repeated_word.py
+
+### Link
+- https://github.com/hgbritten/data-structures-and-algorithms/pull/38
