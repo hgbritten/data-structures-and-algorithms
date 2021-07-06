@@ -34,3 +34,7 @@
   - Arguments: none
   - Returns the total number of nodes in the graph
   - Structure and Testing
+
+
+#### Link
+- https://github.com/hgbritten/data-structures-and-algorithms/pull/40
