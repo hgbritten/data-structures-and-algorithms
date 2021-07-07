@@ -16,4 +16,4 @@
 - Solution is in test_graph_depth_first.py
 
 ## Link
-- https://github.com/hgbritten/data-structures-and-algorithms/pull/41
+- https://github.com/hgbritten/data-structures-and-algorithms/pull/42
