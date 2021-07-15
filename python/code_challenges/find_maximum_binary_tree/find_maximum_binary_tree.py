@@ -56,10 +56,28 @@ class BinaryTree:
         return max_num
 
     def in_order(self):
-        pass
+        def walk(root, collection):
+            if not root:
+                return
+            walk(root.left, collection)
+            collection.append(root.value)
+            walk(root.right, collection)
+
+        collected_values = []
+        walk(self.root, collected_values)
+        return collected_values
 
     def post_order(self):
-        pass
+        def walk(root, collection):
+            if not root:
+                return
+            walk(root.left, collection)
+            walk(root.right, collection)
+            collection.append(root.value)
+
+        collected_values = []
+        walk(self.root, collected_values)
+        return collected_values
 
 
 class BinarySearchTree(BinaryTree):
